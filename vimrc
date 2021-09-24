@@ -35,11 +35,11 @@ Plug 'kana/vim-textobj-user'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mbbill/undotree'
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'nelsyeung/twig.vim'
 Plug 'ngmy/vim-rubocop'
-Plug 'nikvdp/ejs-syntax'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'rust-lang/rust.vim'
@@ -72,7 +72,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
@@ -145,6 +144,7 @@ aug vimrc
   au FileType mail,markdown call WordProcessorMode()
   au FileType vim  setlocal keywordprg=:help nojoinspaces
   au FileType handlebars setlocal commentstring={{!%s}}
+  au BufEnter *hbs setfiletype handlebars
 aug END
 " }}}
 
