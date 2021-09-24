@@ -1,8 +1,8 @@
 [user]
   name = Cam Thompson
-  email = cam@camthompson.com
+  email = cameron.e.thompson@greenlight.me
 [github]
-  user = camthompson
+  user = camthompsongl
 [core]
   editor = vim -f
   excludesfile = ~/.cvsignore
@@ -34,6 +34,7 @@
 [advice]
   statusHints = false
   pushNonFastForward = false
+  detachedHead = false
 [branch]
   autosetupmerge = true
   autosetuprebase = always
